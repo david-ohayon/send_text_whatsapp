@@ -29,12 +29,12 @@ driver.get('https://web.whatsapp.com/')
 sleep(2.5)
 
 msg = txt_to_wordlist()
-user = driver.find_element_by_xpath(f'//span[@title="{name}"]').click()
+driver.find_element_by_xpath(f'//span[@title="{name}"]').click()
 msg_box = driver.find_elements_by_class_name('_3FRCZ')[1]
 
 for i in range(len(txt_to_wordlist())):
     msg_box.send_keys(msg[i])
-    button = driver.find_element_by_class_name('_1JNuk').click()
+    driver.find_element_by_class_name('_1U1xa').click()
     sleep(.2)
 
 sleep(1)
