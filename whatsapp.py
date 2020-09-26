@@ -26,7 +26,7 @@ sleep(1)
 driver.switch_to.window(driver.window_handles[1])
 driver.get('https://web.whatsapp.com/')
 
-sleep(2.5)
+sleep(6)
 
 msg = txt_to_wordlist()
 driver.find_element_by_xpath(f'//span[@title="{name}"]').click()
