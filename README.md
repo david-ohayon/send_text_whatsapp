@@ -1,2 +1,2 @@
-# send_text_whatsapp
+# spam your friends on whatsapp
 spam friends on whatsapp using selenium chrome webdriver with python
