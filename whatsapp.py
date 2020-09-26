@@ -26,6 +26,8 @@ sleep(1)
 driver.switch_to.window(driver.window_handles[1])
 driver.get('https://web.whatsapp.com/')
 
+sleep(2.5)
+
 msg = txt_to_wordlist()
 user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
 user.click()
@@ -38,7 +40,7 @@ for i in range(len(txt_to_wordlist())):
     # button.click()
     sleep(.2)
 
-sleep(2.5)
+sleep(1)
 driver.close()
 sleep(1)
 driver.quit()
