@@ -21,6 +21,9 @@ options.add_argument(profile_path)
 driver = webdriver.Chrome(options=options)
 
 sleep(1)
+driver.execute_script("window.open();")
+sleep(1)
+driver.switch_to.window(driver.window_handles[1])
 driver.get('https://web.whatsapp.com/')
 
 msg = txt_to_wordlist()
