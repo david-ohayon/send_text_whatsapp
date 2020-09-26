@@ -42,4 +42,5 @@ sleep(2.5)
 driver.close()
 sleep(1)
 driver.quit()
+
 system('open -a "Google Chrome"')
