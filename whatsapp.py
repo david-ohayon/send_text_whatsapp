@@ -35,9 +35,7 @@ msg_box = driver.find_elements_by_class_name('_3FRCZ')[1]
 
 for i in range(len(txt_to_wordlist())):
     msg_box.send_keys(msg[i])
-    msg_box.submit()
-    # button = driver.find_element_by_class_name('_1U1xa')
-    # button.click()
+    button = driver.find_element_by_class_name('_1U1xa').click()
     sleep(.2)
 
 sleep(1)
